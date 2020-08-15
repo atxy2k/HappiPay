@@ -1,6 +1,6 @@
 <?php
 
-namespace Atxy2k\HappyPay\Facades;
+namespace Atxy2k\HappiPay\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

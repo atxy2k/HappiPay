@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/HappyPay.iml" filepath="$PROJECT_DIR$/.idea/HappyPay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../HappiPay/.idea/HappiPay.iml" filepath="$PROJECT_DIR$/../HappiPay/.idea/HappiPay.iml" />
     </modules>
   </component>
 </project>

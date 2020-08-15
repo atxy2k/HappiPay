@@ -1,13 +1,13 @@
 <?php
 
 
-namespace Atxy2k\HappyPay\Models;
+namespace Atxy2k\HappiPay\Models;
 
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 
-class HappyPayResponse
+class HappiPayResponse
 {
     public const COMPLETED = 'success';
     public const FAIL = 'error';
@@ -27,19 +27,19 @@ class HappyPayResponse
         }
     }
 
-    public function setTitle(string $title) : HappyPayResponse
+    public function setTitle(string $title) : HappiPayResponse
     {
         $this->title = $title;
         return $this;
     }
 
-    public function setMessage(string $msg) : HappyPayResponse
+    public function setMessage(string $msg) : HappiPayResponse
     {
         $this->msg = $msg;
         return $this;
     }
 
-    public function withData(array $data) : HappyPayResponse
+    public function withData(array $data) : HappiPayResponse
     {
         logger($data);
         $this->status = Arr::get($data,'status');
@@ -56,9 +56,9 @@ class HappyPayResponse
         return $this;
     }
 
-    public static function create(array $data = null) : HappyPayResponse
+    public static function create(array $data = null) : HappiPayResponse
     {
-        return new HappyPayResponse($data);
+        return new HappiPayResponse($data);
     }
 
     public function getStatus() : string

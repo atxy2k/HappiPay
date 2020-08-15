@@ -1,15 +1,15 @@
 <?php
 
-namespace Atxy2k\HappyPay;
+namespace Atxy2k\HappiPay;
 
-use Atxy2k\HappyPay\Models\HappyPayRequest;
-use Atxy2k\HappyPay\Models\HappyPayResponse;
+use Atxy2k\HappiPay\Models\HappiPayRequest;
+use Atxy2k\HappiPay\Models\HappiPayResponse;
 use Exception;
 use GuzzleHttp\Client;
 use Psr\Http\Message\ResponseInterface;
 use Throwable;
 
-class HappyPay
+class HappiPay
 {
     // Build wonderful things
     protected $username = null;
@@ -19,14 +19,14 @@ class HappyPay
 
     public function __construct()
     {
-        $this->url = config('happypay.endpoint');
-        $this->username = config('happypay.credentials.username', null);
-        $this->password = config('happypay.credentials.password', null);
+        $this->url = config('happi_pay.endpoint');
+        $this->username = config('happi_pay.credentials.username', null);
+        $this->password = config('happi_pay.credentials.password', null);
     }
 
-    public function getLink(HappyPayRequest $data) : HappyPayResponse
+    public function getLink(HappiPayRequest $data) : HappiPayResponse
     {
-        $response = HappyPayResponse::create();
+        $response = HappiPayResponse::create();
         try
         {
             /** @var Client $client */

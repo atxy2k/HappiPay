@@ -1,13 +1,13 @@
 <?php
 
 
-namespace Atxy2k\HappyPay\Models;
+namespace Atxy2k\HappiPay\Models;
 
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
 
-class HappyPayConcept implements Arrayable
+class HappiPayConcept implements Arrayable
 {
     protected $title;
     protected $value;
@@ -24,24 +24,24 @@ class HappyPayConcept implements Arrayable
         $this->value = $value;
     }
 
-    public static function create(string $title, string $value) : HappyPayConcept
+    public static function create(string $title, string $value) : HappiPayConcept
     {
-        return new HappyPayConcept($title, $value);
+        return new HappiPayConcept($title, $value);
     }
 
-    public function withTitle(string $title) : HappyPayConcept
+    public function withTitle(string $title) : HappiPayConcept
     {
         $this->title = $title;
         return $this;
     }
 
-    public function withValue(string $value) : HappyPayConcept
+    public function withValue(string $value) : HappiPayConcept
     {
         $this->value = $value;
         return $this;
     }
 
-    public function withIndex(int $index) : HappyPayConcept
+    public function withIndex(int $index) : HappiPayConcept
     {
         $this->index = $index;
         return $this;

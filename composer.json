@@ -1,6 +1,6 @@
 {
-    "name": "atxy2k/happypay",
-    "description": ":package_description",
+    "name": "atxy2k/happi-pay",
+    "description": "Laravel wrapper for happi pay payments",
     "license": "license",
     "authors": [
         {
@@ -10,7 +10,7 @@
         }
     ],
     "homepage": "https://github.com/atxy2k/happypay",
-    "keywords": ["Laravel", "HappyPay"],
+    "keywords": ["Laravel", "Happi", "Pay"],
     "require": {
         "illuminate/support": "~6|~7",
         "ext-json": "*",
@@ -24,21 +24,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Atxy2k\\HappyPay\\": "src/"
+            "Atxy2k\\HappiPay\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Atxy2k\\HappyPay\\Tests\\": "tests"
+            "Atxy2k\\HappiPay\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Atxy2k\\HappyPay\\HappyPayServiceProvider"
+                "HappiPayServiceProvider"
             ],
             "aliases": {
-                "HappyPay": "Atxy2k\\HappyPay\\Facades\\HappyPay"
+                "HappiPay": "Atxy2k\\HappiPay\\Facades\\HappiPay"
             }
         }
     }

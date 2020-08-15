@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Atxy2k\HappyPay\Constants;
+namespace Atxy2k\HappiPay\Constants;
 
 
-class HappyPayParams
+class HappiPayParams
 {
     public const AMOUNT = 'amount';
     public const REF = 'ref';

@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Atxy2k\HappyPay\Constants;
+namespace Atxy2k\HappiPay\Constants;
 
 
-class HappyPay
+class HappiPay
 {
     public const MONEDA = 'MXN';
 

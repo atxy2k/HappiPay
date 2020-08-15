@@ -1,10 +1,10 @@
 <?php
 
-namespace Atxy2k\HappyPay;
+namespace Atxy2k\HappiPay;
 
 use Illuminate\Support\ServiceProvider;
 
-class HappyPayServiceProvider extends ServiceProvider
+class HappiPayServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
@@ -31,11 +31,11 @@ class HappyPayServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/happypay.php', 'happypay');
+        $this->mergeConfigFrom(__DIR__.'/../config/happi_pay.php', 'happi_pay');
 
         // Register the service the package provides.
-        $this->app->singleton('happypay', function ($app) {
-            return new HappyPay;
+        $this->app->singleton('happi_pay', function ($app) {
+            return new HappiPay;
         });
     }
 
@@ -46,7 +46,7 @@ class HappyPayServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['happypay'];
+        return ['happi_pay'];
     }
     
     /**
@@ -58,8 +58,8 @@ class HappyPayServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__.'/../config/happypay.php' => config_path('happypay.php'),
-        ], 'happypay.config');
+            __DIR__.'/../config/happi_pay.php' => config_path('happi_pay.php'),
+        ], 'happi_pay.config');
 
         // Publishing the views.
         /*$this->publishes([

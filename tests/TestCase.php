@@ -1,22 +1,22 @@
-<?php namespace Atxy2k\HappyPay\Tests;
+<?php namespace Atxy2k\HappiPay\Tests;
 
 
-use Atxy2k\HappyPay\HappyPay;
-use Atxy2k\HappyPay\HappyPayServiceProvider;
+use Atxy2k\HappiPay\HappiPay;
+use Atxy2k\HappiPay\HappiPayServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
     protected function getPackageProviders($app)
     {
         return [
-            HappyPayServiceProvider::class
+            HappiPayServiceProvider::class
         ];
     }
 
     protected function getPackageAliases($app)
     {
         return [
-            'HappyPay' => HappyPay::class,
+            'HappiPay' => HappiPay::class,
         ];
     }
 
@@ -32,16 +32,16 @@ class TestCase extends \Orchestra\Testbench\TestCase
         $app['config']->set('logging.default', 'stack');
         $app['config']->set('logging.channels.single.path', __DIR__.'/../logs/laravel.log');
 
-        $app['config']->set('happypay.endpoint', 'https://link.happipay.mx/generar');
-        $app['config']->set('happypay.credentials.username', getenv('HAPPY_PAY_USERNAME'));
-        $app['config']->set('happypay.credentials.password', getenv('HAPPY_PAY_PASSWORD'));
+        $app['config']->set('happi_pay.endpoint', 'https://link.happipay.mx/generar');
+        $app['config']->set('happi_pay.credentials.username', getenv('HAPPI_PAY_USERNAME'));
+        $app['config']->set('happi_pay.credentials.password', getenv('HAPPI_PAY_PASSWORD'));
 
-        $app['config']->set('happypay.options.tp', \Atxy2k\HappyPay\Constants\HappyPay::TP_UNA_SOLA_EXHIBICION);
-        $app['config']->set('happypay.options.currency', \Atxy2k\HappyPay\Constants\HappyPay::MONEDA);
-        $app['config']->set('happypay.options.notify_users', \Atxy2k\HappyPay\Constants\HappyPay::NO_NOTIFICAR_USUARIO);
-        $app['config']->set('happypay.options.3ds', \Atxy2k\HappyPay\Constants\HappyPay::SEGURIDAD_CON_3DS);
-        $app['config']->set('happypay.options.expiration_time', null);
-        $app['config']->set('happypay.options.delegate_commissions', \Atxy2k\HappyPay\Constants\HappyPay::COMISION_TRANSFERIDA);
-        $app['config']->set('happypay.options.concepts_limit', 5);
+        $app['config']->set('happi_pay.options.tp', \Atxy2k\HappiPay\Constants\HappiPay::TP_UNA_SOLA_EXHIBICION);
+        $app['config']->set('happi_pay.options.currency', \Atxy2k\HappiPay\Constants\HappiPay::MONEDA);
+        $app['config']->set('happi_pay.options.notify_users', \Atxy2k\HappiPay\Constants\HappiPay::NO_NOTIFICAR_USUARIO);
+        $app['config']->set('happi_pay.options.3ds', \Atxy2k\HappiPay\Constants\HappiPay::SEGURIDAD_CON_3DS);
+        $app['config']->set('happi_pay.options.expiration_time', null);
+        $app['config']->set('happi_pay.options.delegate_commissions', \Atxy2k\HappiPay\Constants\HappiPay::COMISION_TRANSFERIDA);
+        $app['config']->set('happi_pay.options.concepts_limit', 5);
     }
 }

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Atxy2k\HappyPay\Constants;
+namespace Atxy2k\HappiPay\Constants;
 
 
 class Environment
@@ -9,13 +9,13 @@ class Environment
     public const USERNAME = 'USERNAME';
     public const PASSWORD = 'PASSWORD';
 
-    public const HAPPY_PAY_TP = 'HAPPY_PAY_TP';
-    public const HAPPY_PAY_CURRENCY = 'HAPPY_PAY_CURRENCY';
-    public const HAPPY_PAY_NOTIFY = 'HAPPY_PAY_NOTIFY';
-    public const HAPPY_PAY_3DS = 'HAPPY_PAY_3DS';
-    public const HAPPY_PAY_EXPIRATION_TIME = 'HAPPY_PAY_EXPIRATION_TIME';
-    public const HAPPY_PAY_DELEGATE_COMMISSIONS = 'HAPPY_PAY_DELEGATE_COMMISSIONS';
+    public const HAPPI_PAY_TP = 'HAPPI_PAY_TP';
+    public const HAPPI_PAY_CURRENCY = 'HAPPI_PAY_CURRENCY';
+    public const HAPPI_PAY_NOTIFY = 'HAPPI_PAY_NOTIFY';
+    public const HAPPI_PAY_3DS = 'HAPPI_PAY_3DS';
+    public const HAPPI_PAY_EXPIRATION_TIME = 'HAPPI_PAY_EXPIRATION_TIME';
+    public const HAPPI_PAY_DELEGATE_COMMISSIONS = 'HAPPI_PAY_DELEGATE_COMMISSIONS';
 
-    public const HAPPY_PAY_CONCEPTS_LIMIT = 'HAPPY_PAY_CONCEPTS_LIMIT';
+    public const HAPPI_PAY_CONCEPTS_LIMIT = 'HAPPI_PAY_CONCEPTS_LIMIT';
 
 }

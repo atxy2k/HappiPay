@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Atxy2k\HappyPay\Throws;
+namespace Atxy2k\HappiPay\Throws;
 
 use Exception;
 

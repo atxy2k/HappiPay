@@ -1,0 +1,74 @@
+[2020-08-15 01:07:22] testing.DEBUG: array (
+  'link' => 'https://link.happipay.mx/MTFJLWDY',
+  'status' => 'success',
+  'idLink' => 'MTFJLWDY',
+)  
+[2020-08-15 01:07:34] testing.DEBUG: array (
+  'status' => 'error',
+  'title' => 'Dátos no válidos',
+  'msg' => 'Por favor revise los siguientes datos:',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'msg' => 'Ingrese la  [ref]',
+    ),
+    1 => 
+    array (
+      'msg' => 'Ingrese el [amount]',
+    ),
+    2 => 
+    array (
+      'msg' => 'Ingrese el [currency]',
+    ),
+    3 => 
+    array (
+      'msg' => 'Ingrese el [notificar]',
+    ),
+    4 => 
+    array (
+      'msg' => 'Ingrese el tipo de [seguridad]',
+    ),
+    5 => 
+    array (
+      'msg' => 'Ingrese el tipo pago (C,3,6,9,12,18) y (10,15) solo para AMEX',
+    ),
+  ),
+)  
+[2020-08-15 01:08:20] testing.DEBUG: array (
+  'status' => 'error',
+  'title' => 'Dátos no válidos',
+  'msg' => 'Por favor revise los siguientes datos:',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'msg' => 'Ingrese la  [ref]',
+    ),
+    1 => 
+    array (
+      'msg' => 'Ingrese el [amount]',
+    ),
+    2 => 
+    array (
+      'msg' => 'Ingrese el [currency]',
+    ),
+    3 => 
+    array (
+      'msg' => 'Ingrese el [notificar]',
+    ),
+    4 => 
+    array (
+      'msg' => 'Ingrese el tipo de [seguridad]',
+    ),
+    5 => 
+    array (
+      'msg' => 'Ingrese el tipo pago (C,3,6,9,12,18) y (10,15) solo para AMEX',
+    ),
+  ),
+)  
+[2020-08-15 01:08:43] testing.DEBUG: array (
+  'link' => 'https://link.happipay.mx/TANRPSYG',
+  'status' => 'success',
+  'idLink' => 'TANRPSYG',
+)  

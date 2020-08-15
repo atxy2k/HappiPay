@@ -50,7 +50,6 @@ class HappiPay
         }
         catch (Throwable $e)
         {
-            logger($e->getMessage());
             $response->setTitle('An error ocurred');
             $response->setMessage($e->getMessage());
         }

@@ -41,7 +41,6 @@ class HappiPayResponse
 
     public function withData(array $data) : HappiPayResponse
     {
-        logger($data);
         $this->status = Arr::get($data,'status');
         $this->title = Arr::get($data, 'title', null);
         $this->msg = Arr::get($data,'msg', null);

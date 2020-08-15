@@ -1,7 +1,7 @@
 {
     "name": "atxy2k/happi-pay",
     "description": "Laravel wrapper for happi pay payments",
-    "license": "license",
+    "license": "GPL-2.0-or-later",
     "authors": [
         {
             "name": "Ivan alvarado",

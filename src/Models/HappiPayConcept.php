@@ -14,7 +14,7 @@ class HappiPayConcept implements Arrayable
     protected $index = 1;
 
     /**
-     * HappyPayConcept constructor.
+     * HappiPayConcept constructor.
      * @param $title
      * @param $value
      */

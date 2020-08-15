@@ -60,23 +60,5 @@ class HappiPayServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../config/happi_pay.php' => config_path('happi_pay.php'),
         ], 'happi_pay.config');
-
-        // Publishing the views.
-        /*$this->publishes([
-            __DIR__.'/../resources/views' => base_path('resources/views/vendor/atxy2k'),
-        ], 'happypay.views');*/
-
-        // Publishing assets.
-        /*$this->publishes([
-            __DIR__.'/../resources/assets' => public_path('vendor/atxy2k'),
-        ], 'happypay.views');*/
-
-        // Publishing the translation files.
-        /*$this->publishes([
-            __DIR__.'/../resources/lang' => resource_path('lang/vendor/atxy2k'),
-        ], 'happypay.views');*/
-
-        // Registering package commands.
-        // $this->commands([]);
     }
 }

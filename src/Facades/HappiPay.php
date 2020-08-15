@@ -1,10 +1,8 @@
-<?php
-
-namespace Atxy2k\HappiPay\Facades;
+<?php namespace Atxy2k\HappiPay\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class HappyPay extends Facade
+class HappiPay extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -13,6 +11,6 @@ class HappyPay extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'happypay';
+        return 'happi_pay';
     }
 }

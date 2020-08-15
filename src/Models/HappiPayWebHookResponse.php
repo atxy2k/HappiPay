@@ -7,7 +7,7 @@ namespace Atxy2k\HappiPay\Models;
 use Carbon\Carbon;
 use Illuminate\Support\Arr;
 
-class HappyPayWebHookResponse
+class HappiPayWebHookResponse
 {
     public const APPROVED = 'approved';
     public const ERROR = 'error';
@@ -57,12 +57,12 @@ class HappyPayWebHookResponse
         }
     }
 
-    public static function create(array $data = null) : HappyPayWebHookResponse
+    public static function create(array $data = null) : HappiPayWebHookResponse
     {
-        return new HappyPayWebHookResponse($data);
+        return new HappiPayWebHookResponse($data);
     }
 
-    public function withData(array $data) : HappyPayWebHookResponse
+    public function withData(array $data) : HappiPayWebHookResponse
     {
         $this->reference = Arr::get($data,'referencia');
         $this->response = Arr::get($data,'response');

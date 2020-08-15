@@ -41,5 +41,8 @@
                 "HappiPay": "Atxy2k\\HappiPay\\Facades\\HappiPay"
             }
         }
+    },
+    "scripts": {
+        "test" : "vendor/bin/phpunit"
     }
 }

@@ -6,8 +6,8 @@ namespace Atxy2k\HappiPay\Constants;
 
 class Environment
 {
-    public const USERNAME = 'USERNAME';
-    public const PASSWORD = 'PASSWORD';
+    public const HAPPI_PAY_USERNAME = 'HAPPI_PAY_USERNAME';
+    public const HAPPI_PAY_PASSWORD = 'HAPPI_PAY_PASSWORD';
 
     public const HAPPI_PAY_TP = 'HAPPI_PAY_TP';
     public const HAPPI_PAY_CURRENCY = 'HAPPI_PAY_CURRENCY';

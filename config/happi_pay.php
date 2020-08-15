@@ -7,8 +7,8 @@ return [
     'endpoint' => 'https://link.happipay.mx/generar',
     //
     'credentials' => [
-        'username' => env(Environment::USERNAME, null),
-        'password' => env(Environment::PASSWORD, null)
+        'username' => env(Environment::HAPPI_PAY_USERNAME, null),
+        'password' => env(Environment::HAPPI_PAY_PASSWORD, null)
     ],
     'options' => [
         'tp' => env(Environment::HAPPI_PAY_TP, HappiPay::TP_UNA_SOLA_EXHIBICION),

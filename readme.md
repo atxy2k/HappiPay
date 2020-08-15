@@ -15,6 +15,12 @@ $ composer require atxy2k/happi-pay
 ```
 
 ## Usage
+Antes que nada exporte la configuracion para tener acceso a la configuración predeterminada de happy
+pay:
+```shell
+php artisan vendor:publish --provider=Atxy2k\\HappiPay\\HappiPayServiceProvider
+```
+
 
 Antes de generar una URL usted necesita crear un objeto <code>HappiPayRequest</code> de la siguiente
 manera:

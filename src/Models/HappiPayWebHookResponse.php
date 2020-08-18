@@ -87,6 +87,7 @@ class HappiPayWebHookResponse
         {
             $this->details[] = HappiPayConcept::create($info['label'], $info['value']);
         }
+        return $this;
     }
 
     public function getReference(): ?string

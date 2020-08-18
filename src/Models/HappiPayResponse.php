@@ -4,10 +4,12 @@
 namespace Atxy2k\HappiPay\Models;
 
 
+use Illuminate\Contracts\Support\Arrayable;
+use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 
-class HappiPayResponse
+class HappiPayResponse implements Arrayable,Jsonable
 {
     public const COMPLETED = 'success';
     public const FAIL = 'error';
@@ -18,6 +20,22 @@ class HappiPayResponse
     protected $data;
     protected $id;
     protected $link;
+
+    public function toArray()
+    {
+        return [
+            'status' => $this->status,
+            'title'  => $this->title,
+            'msg'    => $this->msg,
+            'data'   => $this->data,
+            'link'   => $this->link
+        ];
+    }
+
+    public function toJson($options = 0)
+    {
+        return json_encode($this->toArray(), $options);
+    }
 
     public function __construct(array $data = null)
     {
@@ -89,5 +107,4 @@ class HappiPayResponse
     {
         return $this->link;
     }
-
 }

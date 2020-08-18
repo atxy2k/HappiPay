@@ -8,8 +8,9 @@ use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
+use JsonSerializable;
 
-class HappiPayResponse implements Arrayable,Jsonable
+class HappiPayResponse implements Arrayable,Jsonable, JsonSerializable
 {
     public const COMPLETED = 'success';
     public const FAIL = 'error';
@@ -30,6 +31,11 @@ class HappiPayResponse implements Arrayable,Jsonable
             'data'   => $this->data,
             'link'   => $this->link
         ];
+    }
+
+    public function jsonSerialize()
+    {
+        return $this->toArray();
     }
 
     public function __toString() : string
@@ -112,4 +118,5 @@ class HappiPayResponse implements Arrayable,Jsonable
     {
         return $this->link;
     }
+
 }

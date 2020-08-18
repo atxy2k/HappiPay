@@ -20,9 +20,14 @@ pay:
 ```shell
 php artisan vendor:publish --provider=Atxy2k\\HappiPay\\HappiPayServiceProvider
 ```
+Posteriormente, agregue las variables siguientes a su archivo <code>.env</code>
 
-
-Antes de generar una URL usted necesita crear un objeto <code>HappiPayRequest</code> de la siguiente
+```shell
+HAPPI_PAY_USERNAME=YOUR_API_HAPPI_PAY_USERNAME
+HAPPI_PAY_PASSWORD=YOUR_API_HAPPI_PAY_PASSWORD
+```
+Ahora está listo para generar urls, para esto, necesita antes que nada, crear una instancia
+ del objeto <code>HappiPayRequest</code> de la siguiente
 manera:
 
 ``` php
@@ -31,7 +36,8 @@ $amount = 100;
 $payment = HappiPayRequest::create($amount, $payment_id);
 ```
 El objeto HappyPayRequest contiene la información que es posible de enviar al Api de 
-HappiPay.
+HappiPay. Una vez que lo tenga listo, puede obtener el link haciendo uso del facade
+<code>HappiPay</code>
 
 ## Testing
 Antes de ejecutar las pruebas, es necesario colocar en las variables del entorno 

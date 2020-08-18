@@ -57,7 +57,7 @@ class HappiPayRequest implements Arrayable, Jsonable
         return $this;
     }
 
-    public function withTp(int $tp) : HappiPayRequest
+    public function withTp($tp) : HappiPayRequest
     {
         throw_unless(in_array($tp, HappiPay::tp_disponibles()),
             InvalidPaymentType::class);

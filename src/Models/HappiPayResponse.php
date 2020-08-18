@@ -32,6 +32,11 @@ class HappiPayResponse implements Arrayable,Jsonable
         ];
     }
 
+    public function __toString() : string
+    {
+        return $this->toJson();
+    }
+
     public function toJson($options = 0)
     {
         return json_encode($this->toArray(), $options);

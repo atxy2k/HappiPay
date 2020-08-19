@@ -83,9 +83,12 @@ class HappiPayWebHookResponse
         $this->description = Arr::get($data,'descripcion');
         $current_details = Arr::get($data, 'detalles', []);
         $this->details = [];
-        foreach ($current_details as $info)
+        if(!is_null($current_details) && is_array($current_details))
         {
-            $this->details[] = HappiPayConcept::create($info['label'], $info['value']);
+            foreach ($current_details as $info)
+            {
+                $this->details[] = HappiPayConcept::create($info['label'], $info['value']);
+            }
         }
         return $this;
     }
